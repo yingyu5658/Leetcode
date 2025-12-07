@@ -6,9 +6,7 @@
 #include <stdlib.h>
 
 int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
-    // 可访问的最大索引
     int nums_max_idx = numsSize - 1;
-
     for (int i = 0; i < nums_max_idx; i++) {
         for (int j = i + 1; j <= nums_max_idx; j++) {
             if (nums[i] + nums[j] == target) {
